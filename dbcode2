@@ -827,3 +827,163 @@ span.selectOption:hover {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+	$("").click(function(){
+    
+	});
+
+    //Left side Menu script//
+	$("#active li a").click(function() {
+      	$(".side-menu li").removeClass('selected');
+        $(this).parent().addClass('selected');
+	});
+
+    
+    //Right side top dropdown script//
+    $('.selectBox').each(function(){
+        $(this).children('span.selected').html($(this).children('.selectOptions').children('span.selectOption:first').html());
+        $(this).attr('value',$(this).children('.selectOptions').children('span.selectOption:first').attr('value'));
+
+        $(this).children('span.selected,span.selectArrow').click(function(){
+            if($(this).parent().children('.selectOptions').css('display') == 'none'){
+                $(this).parent().children('.selectOptions').css('display','block');
+            }
+            else
+            {
+                $(this).parent().children('.selectOptions').css('display','none');
+            }
+        });
+
+        $(this).find('span.selectOption').click(function(){
+            $(this).parent().css('display','none');
+            $(this).closest('.selectBox').attr('value',$(this).attr('value'));
+            $(this).parent().siblings('span.selected').html($(this).html());
+        });
+    }); 
+
+
+
+    //Comment area script//
+    var message = $("#message").val(" ");
+    $("#my_form").keypress(function(event) {
+    	var message = $("#message").val();
+        if (event.which == 13) {
+        	//alert(message);
+            $(".comment-edit-section").append('<div class="append-whole"><img src="images/3.png"><p>'+ message +'</p><div class="like-rply"><ul class="comment-likes navbar-left" id=""><li><a href="javascript:void(0)"> Like</a></li><li><a href="javascript:void(0)"> Reply</a></li><li><a href="javascript:void(0)"><i class="glyphicon glyphicon-thumbs-up"></i> 1</a></li><li>3 mins ago </li><li>Edited</li></ul><ul class="edit-delete navbar-right" id="correction"><li><a id="edit" href="javascript:void(0)"><i class="glyphicon glyphicon-pencil"></i></a></li><li><a href="javascript:void(0)" id="delete"><i class="glyphicon glyphicon-remove"></i></a></li></ul></div></div>');
+            var message = $("#message").val(" ");
+            event.preventDefault();
+        }
+
+
+   
+
+
+            
+        $("#edit").click(function(){
+
+        // divs will be working with
+    var divToDelete = 'div.append-whole p';
+    var divToAppendTo = 'div.append-whole p';
+
+
+
+    // get the html from the divToDelete
+    var htmlStr = $(divToDelete).html();
+    $(this).closest('.append-whole').hide();
+    
+    //put the new textarea before the other div
+     // $(divToAppendTo).append('<textarea id="message" rows="1" cols="" name="comment" placeholder="Write a comment...">');
+     // $(divToAppendTo).append('</textarea>');
+          
+    // insert the original html into my new textarea
+    $('textarea').val(htmlStr);
+   
+    // remove the div i got the html from originally
+    $(divToDelete).remove();
+        });
+
+        $(document).on('click', '#delete', function () {
+            $(this).closest('.append-whole').hide();
+        });
+        
+        $(".edit-delete").hide();
+        $(".append-whole").mouseenter(function(){
+           $(this).find('.edit-delete').show();
+        });
+        $(".append-whole").mouseleave(function(){
+           $(this).find('.edit-delete').hide();
+        });
+    });
+
+
+
+
+    //Tooltip script//
+    $(".tooltip-secetion").hide();
+    $("#tooltp-ms-ovr").mouseenter(function(){
+        $(".tooltip-secetion").show();
+    });
+    $("#tooltp-ms-ovr").mouseleave(function(){
+        $(".tooltip-secetion").hide();
+    });
+    $(".tooltip-secetion").mouseenter(function(){
+        $(".tooltip-secetion").show();
+    });
+    $(".tooltip-secetion").mouseleave(function(){
+        $(".tooltip-secetion").hide();
+    });
+
+
+    //Slider script// 
+    var imageWidth = 700;
+    $(window).ready(function() {
+        
+        var currentImage = 0;
+        var allImages = $('#slideshow li img').length;
+        $('#slideshow ul').width(allImages*imageWidth);
+        $('.slideshow-next').click(function(){
+            currentImage++;
+            if(currentImage>=allImages) currentImage = 0;
+            setFramePosition(currentImage);
+        });
+
+        $('.slideshow-prev').click(function(){
+            currentImage--;
+            if(currentImage<0) currentImage = allImages-1;
+            setFramePosition(currentImage);
+        });
+       
+    });
+    function setFramePosition(pos){
+        var px = imageWidth*pos*-1;
+        //alert(px);
+        $('#slideshow ul').animate({
+            left: px
+        }, 300);
+    }
+
+    $("#banner-image").click(function(){
+        $(".overlay-slider").show();
+    });
+    $("#close-slider").click(function(){
+        $(".overlay-slider").hide();
+    });
+});
+
+
