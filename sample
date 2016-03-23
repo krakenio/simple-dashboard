@@ -6,6 +6,7 @@
     <title>Dashboard</title>
     <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    
 </head>
 <body>
     <div id="wrapper">
@@ -56,7 +57,8 @@
                 <ul class="nav navbar-nav navbar-right navbar-user nav-select-boxes">
                     <li>
                         <div class='selectBox'><i class="glyphicon glyphicon-search"> <span>&#9660;</span></i>
-                            <span class='selected'></span>
+                            <div class="selectbox-overlay"></div>
+                            <span class='selected-val'></span>
                             <div class="selectOptions" >
                                 <span class="selectOption" value="Option 1">All matches</span>
                                 <span class="selectOption" value="Option 2">Status</span>
@@ -222,6 +224,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script--> 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   
 </body>
 </html>
 
@@ -679,15 +682,13 @@ strong.highlight-txt {
   position: relative;
   right: 11px;
   }
-span.selected {
+span.selected-val {
   background: #fff none repeat scroll 0 0;
   border: 1px solid #ccc;
   border-radius: 20px;
   overflow: hidden;
   text-indent: 40px;
   width: 250px;
-  }
-span.selected{
   position:relative;
   float:left;
   height:30px;
@@ -704,6 +705,7 @@ span.selected{
   position: absolute;
   top: 30px;
   width: 250px;
+  z-index:2;
   }  
 span.selectOption {
   border-bottom: 1px solid #f2f2f2;
@@ -716,7 +718,19 @@ span.selectOption {
 span.selectOption:hover {
   background: #f0f0f0 none repeat scroll 0 0;
   color: #8C8C8C;
-  }          
+  }  
+.selectbox-overlay{
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  display:none;   
+  }        
 .tooltip-secetion {
   background: #000 none repeat scroll 0 0;
   border-radius: 7px;
@@ -1178,10 +1192,18 @@ $(document).ready(function(){
     
     //Right side top dropdown script//
     $('.selectBox').each(function(){
-        $(this).children('span.selected').html($(this).children('.selectOptions').children('span.selectOption:first').html());
+        $(this).children('span.selected-val').html($(this).children('.selectOptions').children('span.selectOption:first').html());
         $(this).attr('value',$(this).children('.selectOptions').children('span.selectOption:first').attr('value'));
 
-        $(this).children('span.selected').click(function(){
+        $(this).children('.selectbox-overlay').click(function(){
+             $(this).parent().children('.selectbox-overlay').css('display','none');
+              $(this).parent().children('.selectOptions').css('display','none');
+
+        });
+        $(this).children('.selectBox span.selected-val').click(function(){
+            $(".selectBox .selectOptions span").removeClass('selected-val');
+            $(this).parent('.selectBox .selectOptions span').addClass('selected-val');
+             $(this).parent().children('.selectbox-overlay').css('display','block');
             if($(this).parent().children('.selectOptions').css('display') == 'none'){
                 $(this).parent().children('.selectOptions').css('display','block');
             }
@@ -1194,7 +1216,8 @@ $(document).ready(function(){
         $(this).find('span.selectOption').click(function(){
             $(this).parent().css('display','none');
             $(this).closest('.selectBox').attr('value',$(this).attr('value'));
-            $(this).parent().siblings('span.selected').html($(this).html());
+            $(this).parent().siblings('span.selected-val').html($(this).html());
+             $('.selectbox-overlay').css('display','none');
         });
     }); 
 
@@ -1308,4 +1331,6 @@ $(document).ready(function(){
         $(".overlay-slider").hide();
     });
 });
+
+
 
