@@ -844,9 +844,6 @@ span.selectOption:hover {
 
 
 $(document).ready(function(){
-	$("").click(function(){
-    
-	});
 
     //Left side Menu script//
 	$("#active li a").click(function() {
@@ -860,7 +857,7 @@ $(document).ready(function(){
         $(this).children('span.selected').html($(this).children('.selectOptions').children('span.selectOption:first').html());
         $(this).attr('value',$(this).children('.selectOptions').children('span.selectOption:first').attr('value'));
 
-        $(this).children('span.selected,span.selectArrow').click(function(){
+        $(this).children('span.selected').click(function(){
             if($(this).parent().children('.selectOptions').css('display') == 'none'){
                 $(this).parent().children('.selectOptions').css('display','block');
             }
@@ -878,60 +875,62 @@ $(document).ready(function(){
     }); 
 
 
-
     //Comment area script//
-    var message = $("#message").val(" ");
-    $("#my_form").keypress(function(event) {
-    	var message = $("#message").val();
+     $("#my_form").keypress(function(event) {
+	    var message = $("#message").val();
         if (event.which == 13) {
-        	//alert(message);
-            $(".comment-edit-section").append('<div class="append-whole"><img src="images/3.png"><p>'+ message +'</p><div class="like-rply"><ul class="comment-likes navbar-left" id=""><li><a href="javascript:void(0)"> Like</a></li><li><a href="javascript:void(0)"> Reply</a></li><li><a href="javascript:void(0)"><i class="glyphicon glyphicon-thumbs-up"></i> 1</a></li><li>3 mins ago </li><li>Edited</li></ul><ul class="edit-delete navbar-right" id="correction"><li><a id="edit" href="javascript:void(0)"><i class="glyphicon glyphicon-pencil"></i></a></li><li><a href="javascript:void(0)" id="delete"><i class="glyphicon glyphicon-remove"></i></a></li></ul></div></div>');
-            var message = $("#message").val(" ");
+            var apend = $(".comment-edit-section").append('<div class="append-whole"><img src="images/3.png"><p>'+ message +'</p><div class="like-rply"><ul class="comment-likes navbar-left" id=""><li><a href="javascript:void(0)"> Like</a></li><li><a href="javascript:void(0)"> Reply</a></li><li><a href="javascript:void(0)"><i class="glyphicon glyphicon-thumbs-up"></i> 1</a></li><!--li>3 mins ago </li><li>Edited</li--></ul><ul class="edit-delete navbar-right" id="correction"><li><a id="edit" href="javascript:void(0)"><i class="glyphicon glyphicon-pencil"></i></a></li><li><a href="javascript:void(0)" id="delete"><i class="glyphicon glyphicon-remove"></i></a></li></ul></div></div>');
+            var message = $("#message").val("");
             event.preventDefault();
-        }
+           
 
+           if ($(".append-whole").hasClass("edit-added")) {
+                   $('.append-whole:last-child').remove();
+                   $('.append-whole').removeClass('edit-added');
+            }
 
-   
-
-
+            $(document).on('click', '#delete', function () {
+                $(this).closest('.append-whole').remove();
+            });
             
-        $("#edit").click(function(){
+            $(".edit-delete").hide();
+            
+            $(".append-whole").mouseenter(function(){
+               $(this).find('.edit-delete').show();
+            });
+            
+            $(".append-whole").mouseleave(function(){
+               $(this).find('.edit-delete').hide();
+            });
+        }
+           
+         $(document).on('click', '#edit', function () {
+            
+             $(this).closest('.append-whole').addClass('edit-added').siblings().removeClass('edit-added');
 
-        // divs will be working with
-    var divToDelete = 'div.append-whole p';
-    var divToAppendTo = 'div.append-whole p';
+             if($('.append-whole').hasClass('edit-added')){
 
+                var divToDelete = 'div.edit-added p';
+                var divToAppendTo = 'div.edit-added p';
 
+                var htmlStr = $(divToDelete).html();
+                //$(this).closest('.append-whole').hide();
 
-    // get the html from the divToDelete
-    var htmlStr = $(divToDelete).html();
-    $(this).closest('.append-whole').hide();
-    
-    //put the new textarea before the other div
-     // $(divToAppendTo).append('<textarea id="message" rows="1" cols="" name="comment" placeholder="Write a comment...">');
-     // $(divToAppendTo).append('</textarea>');
-          
-    // insert the original html into my new textarea
-    $('textarea').val(htmlStr);
-   
-    // remove the div i got the html from originally
-    $(divToDelete).remove();
-        });
+                var editedstr = $('textarea').val(htmlStr);
+                $("#message").keyup(function(){
+                    var currentText = $(this).val();
+                });
 
-        $(document).on('click', '#delete', function () {
-            $(this).closest('.append-whole').hide();
-        });
-        
-        $(".edit-delete").hide();
-        $(".append-whole").mouseenter(function(){
-           $(this).find('.edit-delete').show();
-        });
-        $(".append-whole").mouseleave(function(){
-           $(this).find('.edit-delete').hide();
-        });
-    });
-
-
+                $("#message").keypress(function(event) {
+                    var currentText = $(this).val();
+                    if (event.which == 13) {
+                        $('div.edit-added p').replaceWith('<p>'+ currentText +'</p>');                
+                        event.preventDefault();
+                    }
+                });
+            }
+        });  
+     });
 
 
     //Tooltip script//
@@ -985,5 +984,4 @@ $(document).ready(function(){
         $(".overlay-slider").hide();
     });
 });
-
 
