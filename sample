@@ -6,7 +6,6 @@
     <title>Dashboard</title>
     <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    
 </head>
 <body>
     <div id="wrapper">
@@ -30,18 +29,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse tabs">
                 <ul id="active" class="nav navbar-nav side-nav side-menu">
-                    <li class="selected"><a href="javascript:void(0)"><i class="glyphicon glyphicon-th-large"></i> Dashboard</a></li>
-                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-tasks"></i> Tasks & Milesstones</a></li>
-                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-list-alt"></i> Documents</a></li>
-                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-fire"></i> Bugs</a></li>
-                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
-                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-dashboard"></i> Timesheet</a></li>
-                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-bullhorn"></i> Forums</a></li>
-                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-folder-open"></i> Pages</a></li>
-                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-comment"></i> Chat</a></li>
-                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-user"></i> Users</a></li>
+                    <li class="selected"><a href="#tab1"><i class="glyphicon glyphicon-th-large"></i> Dashboard</a></li>
+                    <li><a href="#tab2"><i class="glyphicon glyphicon-tasks"></i> Tasks & Milesstones</a></li>
+                    <li><a href="#tab3"><i class="glyphicon glyphicon-list-alt"></i> Documents</a></li>
+                    <li><a href="#tab4"><i class="glyphicon glyphicon-fire"></i> Bugs</a></li>
+                    <li><a href="#tab5"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
+                    <li><a href="#tab6"><i class="glyphicon glyphicon-dashboard"></i> Timesheet</a></li>
+                    <li><a href="#tab7"><i class="glyphicon glyphicon-bullhorn"></i> Forums</a></li>
+                    <li><a href="#tab8"><i class="glyphicon glyphicon-folder-open"></i> Pages</a></li>
+                    <li><a href="#tab9"><i class="glyphicon glyphicon-comment"></i> Chat</a></li>
+                    <li><a href="#tab10"><i class="glyphicon glyphicon-user"></i> Users</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-left navbar-user nav-bar-top-custom nav-bar-top-custom2" id="top-menu">
                     <li>
@@ -77,8 +76,8 @@
         </nav>
 
         <div id="page-wrapper">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row tabs-in">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab1">
                     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 ndtv-logo">
                         <img src="images/3.png"/>
                     </div>
@@ -196,7 +195,6 @@
                                     Edited 
                                 </li>
                             </ul>
-                            <div class="like-rply">
                             <!--ul class="edit-delete navbar-right" id="correction">
                                 <li>
                                     <a id="edit" href="javascript:void(0)"><i class="glyphicon glyphicon-pencil"></i></a>
@@ -215,6 +213,51 @@
                         </ul>
                     </div-->
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab2">
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab3">
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab4">
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab5">
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab6">
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab7">
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab8">
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab9">
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tab" id="tab10">
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                </div>
             </div>
         </div>
     <!-- /#wrapper -->
@@ -224,7 +267,6 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script--> 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-   
 </body>
 </html>
 
@@ -869,6 +911,12 @@ span.selectOption:hover {
   float: left;
   height: auto;
 }
+.tab {
+  display:none;
+}
+#tab1 {
+  display:block;
+}
 @media (max-width: 1024px) {
   .comment-form {
   width: 89%;
@@ -1181,13 +1229,18 @@ span.selectOption:hover {
 
 
 
+
 $(document).ready(function(){
 
-    //Left side Menu script//
-	$("#active li a").click(function() {
-      	$(".side-menu li").removeClass('selected');
-        $(this).parent().addClass('selected');
-	});
+    //Left side Tab Menu script//
+    $(".side-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("selected");
+        $(this).parent().siblings().removeClass("selected");
+        var tab = $(this).attr("href");
+        $(".tab").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
 
     
     //Right side top dropdown script//
@@ -1331,6 +1384,7 @@ $(document).ready(function(){
         $(".overlay-slider").hide();
     });
 });
+
 
 
 
