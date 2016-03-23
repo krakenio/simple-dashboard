@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dbcode</title>
+    <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+<body>
+    <div id="wrapper">
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="nav navbar-nav navbar-left navbar-user nav-bar-top-custom" id="top-menu">
+                    <li>
+                        <a href="javascript:void(0)"><img src="images/3.png" width="30px" height="auto"/> </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Home </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Projects</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul id="active" class="nav navbar-nav side-nav side-menu">
+                    <li class="selected"><a href="javascript:void(0)"><i class="glyphicon glyphicon-th-large"></i> Dashboard</a></li>
+                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-tasks"></i> Tasks & Milesstones</a></li>
+                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-list-alt"></i> Documents</a></li>
+                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-fire"></i> Bugs</a></li>
+                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
+                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-dashboard"></i> Timesheet</a></li>
+                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-bullhorn"></i> Forums</a></li>
+                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-folder-open"></i> Pages</a></li>
+                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-comment"></i> Chat</a></li>
+                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-user"></i> Users</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left navbar-user nav-bar-top-custom nav-bar-top-custom2" id="top-menu">
+                    <li>
+                        <a href="javascript:void(0)">ERP Phase III Project </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">ERP Phase V</b></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)s">ERP Phase III</b></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-user nav-select-boxes">
+                    <li>
+                        <div class='selectBox'><i class="glyphicon glyphicon-search"> <span>&#9660;</span></i>
+                            <span class='selected'></span>
+                            <div class="selectOptions" >
+                                <span class="selectOption" value="Option 1">All matches</span>
+                                <span class="selectOption" value="Option 2">Status</span>
+                                <span class="selectOption" value="Option 3">Bugs</span>
+                                <span class="selectOption" value="Option 4">Documents</span>
+                                <span class="selectOption" value="Option 5">Forums</span>
+                                <span class="selectOption" value="Option 6">Forum Comments</span>
+                                <span class="selectOption" value="Option 7">Events</span>
+                                <span class="selectOption" value="Option 8">Milesstones</span>
+                                <span class="selectOption" value="Option 9">Tasks</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 ndtv-logo">
+                        <img src="images/3.png"/>
+                    </div>
+                    <div class="col-lg-10 ndtv-txt">
+                        <h6><a href="#">NDTV</a></h6>
+                        <p>35 minuts ago <i class="glyphicon glyphicon-globe"></i></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ndtv-txt-expnd">
+                        <p>End of the Road for <strong class="highlight-txt">virender sehwag</strong> and <strong class="highlight-txt">Gautam Gambhir</strong>? <strong class="highlight-txt"><a href="#">http://goo.gl/Lbw</a></strong></p>
+
+                        <p>For the laatest criket updates, follow <strong class="highlight-txt"><a href="#">http://sports.ndtv.com/cricket</a></strong></p>
+
+                        <p>AFP File Photo</p>
+
+                        <img id="banner-image" src="images/sewag.jpg"/>
+                        <div class="overlay-slider">
+                            <i id="close-slider" class="glyphicon glyphicon-remove"></i>
+                            <div class="slider-section">
+                                <div id="slideshow">
+                                   <a href="javascript:void(0)" class="slideshow-prev">&laquo;</a> 
+                                   <ul>
+                                        <li><img src="images/sewag.jpg" alt="photo1" /></li>
+                                        <li><img src="images/sewag.jpg" alt="photo2" /></li>
+                                        <li><img src="images/sewag.jpg" alt="photo3" /></li>
+                                        <li><img src="images/sewag.jpg" alt="photo4" /></li>
+                                   </ul>
+                                    <a href="javascript:void(0)" class="slideshow-next">&raquo;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 like-share-section">
+                        <ul class="like-share navbar-left" id="">
+                            <li>
+                                <a href="javascript:void(0)"><i class="glyphicon glyphicon-thumbs-up"></i> Like</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="glyphicon glyphicon-share"></i> Share</a>
+                            </li>
+                        </ul>
+                        <ul class="share-count navbar-right" id="">
+                            <li>
+                                <a href="javascript:void(0)"><i class="glyphicon glyphicon-share"> </i> 5 shares</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 like-count-section">
+                        <ul class="like-count navbar-left" id="">
+                            <li>
+                                <a href="javascript:void(0)" id="tooltp-ms-ovr"><i class="glyphicon glyphicon-thumbs-up"></i> 32 people</a>like this
+                            </li>
+                        </ul>
+                        <div class="tooltip-secetion">
+                            <ul class="tooltip-ul">
+                                <li><a href="javascript:void(0)">Karmugilan</a></li>
+                                <li><a href="javascript:void(0)">Periyanayagi</a></li>
+                                <li><a href="javascript:void(0)">Vaduganathan</a></li>
+                                <li><a href="javascript:void(0)">Muthulakshmi</a></li>
+                                <li><a href="javascript:void(0)">Balaji</a></li>
+                                <li><a href="javascript:void(0)">Vinothkumar</a></li>
+                                <li><a href="javascript:void(0)">praveenkumar</a></li>
+                                <li><a href="javascript:void(0)">Prakash</a></li>
+                                <li><a href="javascript:void(0)">Yuvaraj</a></li>
+                                <li><a href="javascript:void(0)">Ranjith</a></li>
+                                <li><a href="javascript:void(0)">Loganathan</a></li>
+                                <li><a href="javascript:void(0)">Karmugilan</a></li>
+                                <li><a href="javascript:void(0)">Vaduganathan</a></li>
+                                <li><a href="javascript:void(0)">Muthulakshmi</a></li>
+                                <li><a href="javascript:void(0)">Balaji</a></li>
+                                <li><a href="javascript:void(0)">Vinothkumar</a></li>
+                                <li><a href="javascript:void(0)">praveenkumar</a></li>
+                                <li><a href="javascript:void(0)">Prakash</a></li>
+                                <li><a href="javascript:void(0)">Yuvaraj</a></li>
+                                <li><a href="javascript:void(0)">Ranjith</a></li>
+                                <li><a href="javascript:void(0)">Loganathan</a></li>
+                                <li><a href="javascript:void(0)">Palanivel</a></li>
+                                <li><a href="javascript:void(0)">Selvakumar</a></li>
+                                <li><a href="javascript:void(0)">and 10 more...</a></li>
+                            </ul>
+                            <span>&#9660;</span>
+                        </div>
+                        <ul class="top-comments navbar-right" id="">
+                            <li>
+                                <a href="javascript:void(0)">Top Comments <b class="caret"></b></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-section">
+                        <img src="images/3.png">
+                        <form id="my_form" method="post" name="my_form" class="comment-form">
+                            <textarea id="message" rows="1" cols="" name="comment" placeholder="Write a comment...">
+                            </textarea>
+                            <i class="glyphicon glyphicon-camera"></i>
+                            <p>Press Enter to post</p>
+                        </form>
+                    </div>
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
+                        <img src="images/3.png">
+                        <p><strong class="comment-highlighted"><a href="#">Selva</a></strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                        <div class="like-rply">
+                            <ul class="comment-likes navbar-left" id="">
+                                <li>
+                                    <a href="javascript:void(0)"> Like</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"> Reply</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="glyphicon glyphicon-thumbs-up"></i> 1</a>
+                                </li>
+                                <li>
+                                    3 mins ago 
+                                </li>
+                                <li>
+                                    Edited 
+                                </li>
+                            </ul>
+                            <div class="like-rply">
+                            <!--ul class="edit-delete navbar-right" id="correction">
+                                <li>
+                                    <a id="edit" href="javascript:void(0)"><i class="glyphicon glyphicon-pencil"></i></a>
+                                </li>
+                                <li>
+                                    <a id="delete" href="javascript:void(0)" ><i class="glyphicon glyphicon-remove"></i></a>
+                                </li>
+                            </ul-->
+                        </div>
+                    </div>
+                    <!--div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 viewmore-section">
+                        <ul class="viewmore navbar-left" id="">
+                            <li>
+                                <a href="javascript:void(0)"><i class="glyphicon glyphicon-comment"></i> View 9 More Comments</a>
+                            </li>
+                        </ul>
+                    </div-->
+                </div>
+            </div>
+        </div>
+    <!-- /#wrapper -->
+
+    
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script--> 
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin-top: 70px;
+}
+#wrapper {
+  padding-left: 225px;
+  width:100%;
+}
+#page-wrapper {
+  width: 98%;
+}
+.navbar-inverse {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #dbdbdb;
+}
+.navbar-header {
+  border-right: 1px solid #dbdbdb;
+  float: left;
+  width: 225px;
+}
+.navbar {
+  margin-bottom: 20px;
+  min-height: 50px;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1030;
+}
+a{
+  outline:none!important;
+  text-decoration:none!important;
+}
+.side-nav {
+  background-color: #f2f2f2;
+  border-radius: 0;
+  border-right: 1px solid #dbdbdb;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 50px;
+  width: 225px;
+}
+.side-nav>li.dropdown>ul.dropdown-menu {
+	position: relative;
+	min-width: 225px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+  }
+
+.side-nav>li.dropdown>ul.dropdown-menu>li>a {
+	color: #999999;
+	padding: 15px 15px 15px 25px;
+  }
+
+.side-nav>li.dropdown>ul.dropdown-menu>li>a:hover,
+.side-nav>li.dropdown>ul.dropdown-menu>li>a.active,
+.side-nav>li.dropdown>ul.dropdown-menu>li>a:focus {
+	color: #fff;
+	background-color: #080808;
+  }
+
+.side-nav>li>a {
+	width: 225px;
+  }
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  background-color: #2577e3;
+  }
+.navbar-inverse .navbar-nav > li > a {
+  color: #4d4d4d;
+  }
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  color: #fff;
+  }
+.nav-bar-top-custom li{
+  display:inline-block;
+  }
+.nav-bar-top-custom2 li{
+  display:block!important;
+  }
+.messages-dropdown .dropdown-menu {
+	min-width: 300px;
+  }
+.messages-dropdown .dropdown-menu li a {
+	white-space: normal;
+  }
+.navbar-collapse {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+.navbar-nav > li > a {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  }
+.divider-vertical {
+  border-right: 1px solid #000000;
+  height: 50px;
+  margin: 0 9px;
+  overflow: hidden;
+  width: 1px;
+  }
+.navbar-search{
+  padding-right: 27px;
+  padding-top: 7px;
+  }
+.selected {
+  background-color: #2577e3;
+  }
+.selected a{
+  color:#ffffff!important;
+  }
+
+.navbar-inverse .nav-bar-top-custom > li > a:hover, .navbar-inverse .nav-bar-top-custom > li > a:focus {
+  background: none;
+  font-weight:600;
+  color: #000000;
+  }
+.navbar-inverse .nav-bar-top-custom > li > a {
+  color: #999999;
+  font-weight: 600;
+  outline: medium none;
+  padding: 15px 15px 4px ;
+  }
+#top-search {
+  color: #999999;
+  left: 9px;
+  position: absolute;
+  top: 18px;
+  }
+.form-control {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  height: 34px;
+  line-height: 1.42857;
+  padding: 2px 6px 0 50px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 250px;
+  }
+.sample{
+  width:100%;
+  height:200px;
+  float:left;
+  border:1px solid red;
+  }
+.ndtv-logo img {
+  padding: 10px 0 0 35px;
+  }
+.ndtv-txt h6 {
+  margin: 10px 0 2px;
+  }
+.ndtv-txt h6 a {
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #284990;
+  }
+.ndtv-txt p {
+  color: #8a9dae;
+  font-size: 18px;
+  font-weight: 600;
+  }
+.ndtv-txt p i {
+  position: relative;
+  top: 4px;
+  }
+strong.highlight-txt {
+  color: #295196;
+  }
+.ndtv-txt-expnd{
+  position:relative;
+  }
+.ndtv-txt-expnd p {
+  font-size: 25px;
+  padding: 25px 35px 0;
+  }
+.ndtv-txt-expnd p a {
+  text-decoration: none;
+  }
+.ndtv-txt-expnd img {
+  height: auto;
+  padding: 35px 35px 10px;
+  width: 100%;
+  }
+.like-share-section {
+  border-bottom: 1px solid #EAE9EE;
+  display: table;
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  }
+.like-share{
+  padding:0;
+}
+.like-share li {
+  display: inline-block;
+  }
+.like-share li a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-decoration: none;
+  }
+.share-count li {
+  display: inline-block;
+  }
+.share-count li a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-decoration: none;
+  }
+.like-count-section {
+  display: table;
+  float: none;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 90%;
+  }
+.like-count{
+  padding:0;
+  }
+.like-count li {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  }
+.like-count li a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-decoration: none;
+  }
+.top-comments li {
+  display: inline-block;
+  }
+.top-comments li a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-decoration: none;
+  }
+.comment-section{
+  display: table;
+  float: none;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 90%;
+  }
+.comment-section img {
+  float: left;
+  height: 45px;
+  margin: 0 10px;
+  width: 45px;
+  }
+.comment-form {
+  float: left;
+  position: relative;
+  width: 93%;
+  }
+.comment-form i {
+  font-size: 20px;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  color:#D3D3D3;
+  }
+.comment-form textarea {
+  border: 1px solid #c5ccde;
+  color: #adaea6;
+  height: 29px;
+  padding: 0 10px;
+  resize: none;
+  width: 100%;
+  font-weight: 900;
+  font-size: 17px;
+  }
+.comment-form p {
+  font-size: 12px;
+  font-weight: 600;
+  color:#8C95A6;
+  }
+.comment-edit-section{
+  display: table;
+  float: none;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 90%;  
+  }
+.comment-edit-section img{
+  float: left;
+  height: 45px;
+  margin: 0 10px;
+  width: 45px;
+  }
+.comment-edit-section p {
+  float: left;
+  font-size: 18px;
+  font-weight: 900;
+  height: auto;
+  width: 93%;
+  min-height: 46px;
+  }
+.like-count-section {
+  display: table;
+  float: none;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 90%;
+  position:relative;
+  }
+.comment-likes {
+  padding: 10px 54px;
+  } 
+.comment-likes li {
+  color: #8c95a6;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  }
+.comment-likes li:last-child{
+  margin-left:10px;
+  }
+.comment-likes li a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-decoration: none;
+  }
+.edit-delete {
+  padding: 10px 0;
+  } 
+.edit-delete li {
+  color: #8c95a6;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  }
+.edit-delete li:last-child{
+  margin-left:10px;
+  }
+.edit-delete li a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-decoration: none;
+  }
+.viewmore-section{
+  padding:0;
+  }
+.viewmore {
+  padding: 10px 54px;
+  } 
+.viewmore li {
+  color: #8c95a6;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  }
+.viewmore li a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-decoration: none;
+  }
+.viewmore i {
+  position: relative;
+  top: 5px;
+  left: 0;
+  }
+.append-whole{
+  width:100%;
+  height:auto;
+  float:left;
+  }
+.nav-select-boxes {
+  position: relative;
+  right: 20px;
+  top: 10px;
+  }
+.selectBox{
+  position:relative;
+  display:inline-block;
+  cursor:default;
+  text-align:left;
+  line-height:30px;
+  clear:both;
+  color:#888;
+  }
+.selectBox i {
+  left: 10px;
+  position: absolute;
+  z-index: 9;
+  top: 9px;
+  }
+.selectBox i span {
+  bottom: 4px;
+  font-size: 9px;
+  position: relative;
+  right: 11px;
+  }
+span.selected {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  text-indent: 40px;
+  width: 250px;
+  }
+span.selected{
+  position:relative;
+  float:left;
+  height:30px;
+  z-index:1;
+  }
+.selectOptions {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  left: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  position: absolute;
+  top: 30px;
+  width: 250px;
+  }  
+span.selectOption {
+  border-bottom: 1px solid #f2f2f2;
+  display: block;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 7px 8%;
+  width: 96%;
+  }
+span.selectOption:hover {
+  background: #f0f0f0 none repeat scroll 0 0;
+  color: #8C8C8C;
+  }          
+.tooltip-secetion {
+  background: #000 none repeat scroll 0 0;
+  border-radius: 7px;
+  height: auto;
+  left: 3px;
+  position: absolute;
+  top: -453px;
+  width: 150px;
+  display:none;
+  }
+.tooltip-ul {
+  float: left;
+  height: auto;
+  margin: 0;
+  padding: 10px;
+  width: auto;
+  }
+.tooltip-ul li {
+  float: left;
+  height: auto;
+  list-style: outside none none;
+  width: 100%;
+  }
+.tooltip-ul li a {
+  color: #fff;
+  float: left;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  }
+.tooltip-secetion span {
+  bottom: -13px;
+  color: #000;
+  position: absolute;
+  right: 50%;
+  }
+.slider-section {
+  float: none;
+  height: 400px;
+  width:47%;
+  position: fixed;
+  top: 0;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index:99999;
+  max-width:636px;
+  }
+#slideshow{
+  margin:0 auto;
+  width:100%;
+  height:400px;
+  overflow: hidden;
+  position: relative;
+  }
+#slideshow ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+  position: absolute;
+  }
+#slideshow li{
+  float:left;
+  list-style: none;
+  }
+#slideshow li img{
+  width:100%;
+  height:100%;
+  float:left;
+  padding:0;
+  }
+#slideshow a:hover{
+  background: rgba(0,0,0,0.8);
+  border-color: #000;
+  }
+#slideshow a:active{
+  background: #990;
+  }
+.slideshow-prev, .slideshow-next{
+  position: absolute;
+  top:180px;
+  font-size: 30px;
+  text-decoration: none;
+  color:#fff;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  z-index:2;
+  }
+.slideshow-prev{
+  left:0px;
+  border-left: 3px solid #fff;
+  }
+.slideshow-next{
+  right:0px;
+  border-right: 3px solid #fff;
+  }
+.overlay-slider {
+  background: rgba(13, 18, 24, 0.5) none repeat scroll 0 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  display:none;
+  }
+.overlay-slider i {
+  color: #fff;
+  font-size: 28px;
+  position: absolute;
+  right: 11px;
+  top: 10px;
+  z-index: 99999;
+  }
+#banner-image, #close-slider{
+  cursor:pointer;
+  }
+.navbar-inverse .navbar-toggle {
+  background: #2577E3 none repeat scroll 0 0;
+  border-color: #2577E3;
+  }
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #2577E3;
+  }
+.col-lg-10.ndtv-txt {
+  float: left;
+  }
+.like-rply {
+  width: 100%;
+  float: left;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .comment-form {
+  width: 89%;
+  }
+.comment-section img {
+  height: 40px;
+  width: 40px;
+  }
+.comment-edit-section p {
+  width: 89%;
+  }
+.comment-edit-section img {
+  height: 40px;
+  width: 40px;
+  }
+.ndtv-txt-expnd p {
+  font-size: 22px;
+  padding: 10px 35px 0;
+  }
+.slider-section {
+  width: 63%;
+  }
+}
+@media (max-width: 912px) {
+.navbar-toggle {
+  z-index: 9;
+  }
+.navbar-header {
+  width: 100%;
+  }
+.nav-bar-top-custom{
+  width:auto;
+  }
+.side-nav {
+  margin: 0;
+  position: static;
+  width: 100%;
+  border:none;
+  }
+.side-nav > li > a {
+  width: 100%;
+  }
+.side-menu li{
+  display:block;
+  float:none;
+  }
+.nav-bar-top-custom2 li {
+  display: block !important;
+  float: none;
+  }
+.nav-select-boxes {
+  position: relative;
+  right: 12px;
+  top: 10px;
+  width: 100%;
+  }
+.navbar-inverse .nav-bar-top-custom > li > a {
+  padding: 15px 0 6px 30px;
+  }
+.navbar-toggle {
+  margin-bottom: 3px;
+  margin-top: 8px;
+  }
+.nav-select-boxes li {
+  text-align: center;
+  }
+.nav-select-boxes {
+  position: relative;
+  right: 12px;
+  top: 10px;
+  }
+#wrapper {
+  padding-left: 0;
+  }
+.navbar-collapse.collapse {
+    display: none !important;
+  }
+.navbar-collapse.collapse.in {
+    display: block !important;
+  }
+.navbar-header .collapse, .navbar-toggle {
+    display:block !important;
+  }
+.navbar-header {
+    float:none;
+  }
+.comment-form {
+  width: 90%;
+  }
+.comment-edit-section p {
+  width: 90%;
+  }
+.ndtv-txt-expnd p {
+  font-size: 18px;
+  padding: 13px 35px 0;
+  }
+.comment-edit-section p {
+  font-size: 13px;
+  }
+.nav-select-boxes {
+  right: 0;
+  top: 10px;
+  margin-bottom: 30px;
+  left: 25px;
+  }
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0;
+  }
+.slider-section {
+  width: 83%;
+  }
+}
+@media (max-width: 640px) {
+  .like-share {
+  float: left;
+  width: auto;
+  }
+.share-count.navbar-right {
+  width: auto;
+  float: right;
+  }
+.like-count {
+  width: auto;
+  float: left;
+  }
+.top-comments.navbar-right {
+  width: auto;
+  float: right;
+  }
+.comment-form {
+  width: 85%;
+  }
+.comment-edit-section p {
+  width: 86%;
+  }
+.comment-likes {
+  float: left;
+  width: auto;
+  }
+.edit-delete {
+  float: right;
+  padding: 13px 0 5px;
+  width: auto;
+  }
+.navbar-toggle {
+  margin-bottom: 3px;
+  margin-top: 17px;
+  }
+.slider-section {
+  height: 260px;
+  width: 53%;
+  }
+.slider-section #slideshow ul li img {
+  float: left;
+  height: 260px;
+  width: 100%;
+  }
+.slideshow-prev, .slideshow-next {
+  margin-top: -94px;
+  top: 50%;
+  }
+}
+@media (max-width: 568px) {
+  .comment-likes {
+  padding: 10px 0 10px 54px;
+}
+@media (max-width: 516px) {
+ .comment-edit-section p {
+  width: 82%;
+  }
+.comment-form {
+  width: 83%;
+  }
+.comment-likes li {
+  font-size: 13px;
+  }
+.comment-likes li a {
+  font-size: 13px;
+  padding: 0 4px;
+  }
+.edit-delete li a {
+  font-size: 13px;
+  }
+.edit-delete {
+  padding: 10px 0 5px;
+  }
+.viewmore li a {
+  font-size: 13px;
+  }
+}
+@media (max-width: 424px) {
+  .comment-form {
+  width: 77%;
+  }
+.share-count li a {
+  font-size: 13px;
+  }
+.like-share li a {
+  font-size: 13px;
+  padding: 0 5px;
+  }
+.like-count li a {
+  font-size: 13px;
+  }
+.like-count li {
+  font-size: 13px;
+  }
+.comment-edit-section p {
+  width: 77%;
+  }
+.top-comments li a {
+  font-size: 13px;
+  }
+}
+@media (max-width: 360px) {
+.ndtv-logo img {
+  float: left;
+  padding: 10px 0 0;
+  }
+.ndtv-txt-expnd p {
+  font-size: 18px;
+  padding: 13px 0 0 0;
+  }
+.edit-delete {
+  margin-right: 16px;
+  }
+.slider-section {
+  height: 260px;
+  width: 93%;
+  }
+}
+@media (max-width: 334px) {
+  .comment-likes {
+  padding: 10px 0 10px 17px;
+  }
+.viewmore {
+  padding: 10px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+    //Left side Menu script//
+	$("#active li a").click(function() {
+      	$(".side-menu li").removeClass('selected');
+        $(this).parent().addClass('selected');
+	});
+
+    
+    //Right side top dropdown script//
+    $('.selectBox').each(function(){
+        $(this).children('span.selected').html($(this).children('.selectOptions').children('span.selectOption:first').html());
+        $(this).attr('value',$(this).children('.selectOptions').children('span.selectOption:first').attr('value'));
+
+        $(this).children('span.selected').click(function(){
+            if($(this).parent().children('.selectOptions').css('display') == 'none'){
+                $(this).parent().children('.selectOptions').css('display','block');
+            }
+            else
+            {
+                $(this).parent().children('.selectOptions').css('display','none');
+            }
+        });
+
+        $(this).find('span.selectOption').click(function(){
+            $(this).parent().css('display','none');
+            $(this).closest('.selectBox').attr('value',$(this).attr('value'));
+            $(this).parent().siblings('span.selected').html($(this).html());
+        });
+    }); 
+
+
+    //Comment area script//
+     $("#my_form").keypress(function(event) {
+	    var message = $("#message").val();
+        if (event.which == 13) {
+            var apend = $(".comment-edit-section").append('<div class="append-whole"><img src="images/3.png"><p>'+ message +'</p><div class="like-rply"><ul class="comment-likes navbar-left" id=""><li><a href="javascript:void(0)"> Like</a></li><li><a href="javascript:void(0)"> Reply</a></li><li><a href="javascript:void(0)"><i class="glyphicon glyphicon-thumbs-up"></i> 1</a></li><!--li>3 mins ago </li><li>Edited</li--></ul><ul class="edit-delete navbar-right" id="correction"><li><a id="edit" href="javascript:void(0)"><i class="glyphicon glyphicon-pencil"></i></a></li><li><a href="javascript:void(0)" id="delete"><i class="glyphicon glyphicon-remove"></i></a></li></ul></div></div>');
+            var message = $("#message").val("");
+            event.preventDefault();
+           
+
+           if ($(".append-whole").hasClass("edit-added")) {
+                   $('.append-whole:last-child').remove();
+                   $('.append-whole').removeClass('edit-added');
+            }
+
+            $(document).on('click', '#delete', function () {
+                $(this).closest('.append-whole').remove();
+            });
+            
+            $(".edit-delete").hide();
+            
+            $(".append-whole").mouseenter(function(){
+               $(this).find('.edit-delete').show();
+            });
+            
+            $(".append-whole").mouseleave(function(){
+               $(this).find('.edit-delete').hide();
+            });
+        }
+           
+         $(document).on('click', '#edit', function () {
+            
+             $(this).closest('.append-whole').addClass('edit-added').siblings().removeClass('edit-added');
+
+             if($('.append-whole').hasClass('edit-added')){
+
+                var divToDelete = 'div.edit-added p';
+                var divToAppendTo = 'div.edit-added p';
+
+                var htmlStr = $(divToDelete).html();
+                //$(this).closest('.append-whole').hide();
+
+                var editedstr = $('textarea').val(htmlStr);
+                $("#message").keyup(function(){
+                    var currentText = $(this).val();
+                });
+
+                $("#message").keypress(function(event) {
+                    var currentText = $(this).val();
+                    if (event.which == 13) {
+                        $('div.edit-added p').replaceWith('<p>'+ currentText +'</p>');                
+                        event.preventDefault();
+                    }
+                });
+            }
+        });  
+     });
+
+
+    //Tooltip script//
+    $(".tooltip-secetion").hide();
+    $("#tooltp-ms-ovr").mouseenter(function(){
+        $(".tooltip-secetion").show();
+    });
+    $("#tooltp-ms-ovr").mouseleave(function(){
+        $(".tooltip-secetion").hide();
+    });
+    $(".tooltip-secetion").mouseenter(function(){
+        $(".tooltip-secetion").show();
+    });
+    $(".tooltip-secetion").mouseleave(function(){
+        $(".tooltip-secetion").hide();
+    });
+
+
+    //Slider script// 
+    var imageWidth = 700;
+    $(window).ready(function() {
+        
+        var currentImage = 0;
+        var allImages = $('#slideshow li img').length;
+        $('#slideshow ul').width(allImages*imageWidth);
+        $('.slideshow-next').click(function(){
+            currentImage++;
+            if(currentImage>=allImages) currentImage = 0;
+            setFramePosition(currentImage);
+        });
+
+        $('.slideshow-prev').click(function(){
+            currentImage--;
+            if(currentImage<0) currentImage = allImages-1;
+            setFramePosition(currentImage);
+        });
+       
+    });
+    function setFramePosition(pos){
+        var px = imageWidth*pos*-1;
+        //alert(px);
+        $('#slideshow ul').animate({
+            left: px
+        }, 300);
+    }
+
+    $("#banner-image").click(function(){
+        $(".overlay-slider").show();
+    });
+    $("#close-slider").click(function(){
+        $(".overlay-slider").hide();
+    });
+});
+
