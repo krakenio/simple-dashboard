@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dbcode</title>
+    <title>Dashboard</title>
     <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 </head>
@@ -131,29 +131,29 @@
                         </ul>
                         <div class="tooltip-secetion">
                             <ul class="tooltip-ul">
-                                <li><a href="javascript:void(0)">Karmugilan</a></li>
-                                <li><a href="javascript:void(0)">Periyanayagi</a></li>
-                                <li><a href="javascript:void(0)">Vaduganathan</a></li>
-                                <li><a href="javascript:void(0)">Muthulakshmi</a></li>
-                                <li><a href="javascript:void(0)">Balaji</a></li>
-                                <li><a href="javascript:void(0)">Vinothkumar</a></li>
-                                <li><a href="javascript:void(0)">praveenkumar</a></li>
-                                <li><a href="javascript:void(0)">Prakash</a></li>
-                                <li><a href="javascript:void(0)">Yuvaraj</a></li>
-                                <li><a href="javascript:void(0)">Ranjith</a></li>
-                                <li><a href="javascript:void(0)">Loganathan</a></li>
-                                <li><a href="javascript:void(0)">Karmugilan</a></li>
-                                <li><a href="javascript:void(0)">Vaduganathan</a></li>
-                                <li><a href="javascript:void(0)">Muthulakshmi</a></li>
-                                <li><a href="javascript:void(0)">Balaji</a></li>
-                                <li><a href="javascript:void(0)">Vinothkumar</a></li>
-                                <li><a href="javascript:void(0)">praveenkumar</a></li>
-                                <li><a href="javascript:void(0)">Prakash</a></li>
-                                <li><a href="javascript:void(0)">Yuvaraj</a></li>
-                                <li><a href="javascript:void(0)">Ranjith</a></li>
-                                <li><a href="javascript:void(0)">Loganathan</a></li>
-                                <li><a href="javascript:void(0)">Palanivel</a></li>
-                                <li><a href="javascript:void(0)">Selvakumar</a></li>
+                                <li><a href="javascript:void(0)">ram</a></li>
+                                <li><a href="javascript:void(0)">saran</a></li>
+                                <li><a href="javascript:void(0)">ramnath</a></li>
+                                <li><a href="javascript:void(0)">sarankumar</a></li>
+                                <li><a href="javascript:void(0)">raman</a></li>
+                                <li><a href="javascript:void(0)">sandya</a></li>
+                                <li><a href="javascript:void(0)">siva</a></li>
+                                <li><a href="javascript:void(0)">vino</a></li>
+                                <li><a href="javascript:void(0)">pravan</a></li>
+                                <li><a href="javascript:void(0)">pagun</a></li>
+                                <li><a href="javascript:void(0)">anchoor</a></li>
+                                <li><a href="javascript:void(0)">babar</a></li>
+                                <li><a href="javascript:void(0)">akbar</a></li>
+                                <li><a href="javascript:void(0)">ramsaran</a></li>
+                                <li><a href="javascript:void(0)">ramaith</a></li>
+                                <li><a href="javascript:void(0)">khoonchar</a></li>
+                                <li><a href="javascript:void(0)">venkat</a></li>
+                                <li><a href="javascript:void(0)">hari</a></li>
+                                <li><a href="javascript:void(0)">virath</a></li>
+                                <li><a href="javascript:void(0)">sachin</a></li>
+                                <li><a href="javascript:void(0)">prasath</a></li>
+                                <li><a href="javascript:void(0)">pandi</a></li>
+                                <li><a href="javascript:void(0)">haridas</a></li>
                                 <li><a href="javascript:void(0)">and 10 more...</a></li>
                             </ul>
                             <span>&#9660;</span>
@@ -175,7 +175,7 @@
                     </div>
                     <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 comment-edit-section">
                         <img src="images/3.png">
-                        <p><strong class="comment-highlighted"><a href="#">Selva</a></strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                        <p><strong class="comment-highlighted"><a href="#">Ramnath</a></strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
                         <div class="like-rply">
                             <ul class="comment-likes navbar-left" id="">
                                 <li>
@@ -224,6 +224,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 
 
